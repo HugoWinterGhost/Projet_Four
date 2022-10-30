@@ -1,0 +1,10 @@
+.spinner {
+  position: fixed;
+  top: calc(50% - 4rem);
+  left: calc(50% - 4rem);
+  z-index: 9999;
+  width: 8rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  color: #67c23c;
+}

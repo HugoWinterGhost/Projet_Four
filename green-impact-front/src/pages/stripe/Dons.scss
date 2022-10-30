@@ -1,0 +1,47 @@
+/* FEUILLE STYLE DE LA PAGE DONS */
+
+h2 {
+  color: #67c23c;
+}
+
+.donationPage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .donationBlock {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 25px 50px 25px 50px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+
+    img {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 180px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 25px 10px 25px;
+      border-radius: 50px;
+      border: none;
+      background-color: #67c23c;
+      color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+    }
+  }
+}

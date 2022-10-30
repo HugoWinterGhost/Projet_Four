@@ -1,0 +1,119 @@
+/* STYLE HOMEPAGE */
+.logo-site {
+  text-align: center;
+}
+
+.logo-site img {
+  width: 600px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 100%;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #67c23c;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.under-title {
+  padding: 10px 0px 50px 0px;
+  font-weight: 900;
+  color: #67c23c;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  display: block;
+  width: calc(100% - 24px);
+  font-size: 18px;
+  font-weight: 600;
+  color: #67c23c;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #67c23c;
+  border-radius: 50px;
+}
+
+.search-container form button {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  height: auto;
+  width: 50px;
+  background: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: #67c23c;
+  cursor: pointer;
+  outline: 0;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-text {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-site img {
+    width: 80%;
+  }
+
+  .under-title {
+    padding: 10px 30px 40px 30px;
+  }
+
+  .suggestions {
+    max-width: 90%;
+  }
+  .search-container {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+  }
+
+  .search-container input[type="text"] {
+    font-size: 14px;
+  }
+
+  .search-container form button {
+    top: 7px;
+    width: 40px;
+  }
+}

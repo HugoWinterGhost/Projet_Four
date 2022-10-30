@@ -1,0 +1,256 @@
+/* STYLE PAGE BACKOFFICE */
+
+#backoffice button {
+  background-color: #f9f6f6;
+  border: none;
+  padding: 10px 50px 10px 50px;
+  border-radius: 50px;
+  width: 350px;
+  transition: 0.4s;
+  position: relative;
+}
+
+#backoffice button:hover {
+  background-color: #e9e7e7;
+}
+
+#backoffice .icons {
+  position: absolute;
+  left: 50px;
+  top: 12px;
+}
+
+.btn-back-menu {
+  background-color: #7db769;
+  color: #fff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+}
+
+.btn-back-menu:hover {
+  opacity: 0.9;
+  transition: 0.4s;
+}
+
+.btn-add {
+  background-color: #7db769;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-add:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.btn-see {
+  background-color: #7db769;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-see:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.btn-edit {
+  background-color: #ffc105;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-edit:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-delete:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+/* FORMS BACKOFFICE */
+.form-backoffice input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  background-color: #e9e7e7;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  color: #636161;
+  display: block;
+  width: calc(100% - 24px);
+  font-weight: 600;
+}
+
+input[type="file"] {
+  padding: 12px 10px !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.cardBackoffice {
+  padding: 70px 0px 40px 0px;
+
+  form {
+    width: 800px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 50px 35px;
+    transition: 0.4s;
+  }
+
+  form:hover {
+    transform: scale(1.1);
+  }
+
+  form * {
+    font-family: "Poppins", sans-serif;
+    color: #161616;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+
+  label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  input:not(#size_input) {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  ::placeholder {
+    color: #959595;
+  }
+
+  .multi-select {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    margin-top: 8px;
+    padding: 5px;
+
+    input {
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    display: block;
+    height: 80px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  ::placeholder {
+    color: #959595;
+  }
+
+  select {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 0px 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  ::placeholder {
+    color: #959595;
+  }
+
+  button.add {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #7db769;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  button.add:hover {
+    background-color: #88c672;
+  }
+
+  button.backBo {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #807f7f;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  button.backBo:hover {
+    background-color: #cecece;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardBackoffice {
+    padding: 70px 0px 40px 0px;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  .col-sm-6 {
+    margin-bottom: 1.5rem;
+  }
+}

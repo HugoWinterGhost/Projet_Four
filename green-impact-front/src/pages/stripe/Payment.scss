@@ -1,0 +1,76 @@
+/* FEUILLE STYLE DE LA PAGE PAYMENT */
+
+.paymentPage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .paymentContainer {
+    width: 800px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 35px;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+
+    form * {
+      font-family: "Poppins", sans-serif;
+      color: #161616;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+    }
+
+    label {
+      display: block;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: #f8f9fa;
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    ::placeholder {
+      color: #959595;
+    }
+
+    button {
+      width: 100%;
+      background-color: #7db769;
+      color: #fff;
+      padding: 15px 0;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.4s;
+      border: none;
+
+      &:hover {
+        background-color: #88c672;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paymentPage .paymentContainer {
+    width: 100%;
+  }
+}

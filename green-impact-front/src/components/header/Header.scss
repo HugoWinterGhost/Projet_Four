@@ -1,0 +1,130 @@
+/* STYLE HEADER */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+
+  .logo-navbar {
+    margin-inline-start: 2em;
+    img {
+      transition: 0.4s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .mobile-none-link {
+    display: none;
+  }
+
+  .me-auto.navbar-nav {
+    margin-left: 10px;
+  }
+
+  a.nav-link {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.0625em;
+    text-decoration: none !important;
+  }
+
+  a.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0000008c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .btn-don {
+    background-color: #67c23c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-inline-end: 2em;
+    transition: 0.4s;
+  }
+
+  .btn-don:hover {
+    background-color: #52992f;
+    transform: scale(1.05);
+  }
+}
+
+.scroll {
+  top: -90px;
+}
+
+button#dropdown-basic {
+  background: none;
+  border: none;
+  color: #637162;
+  font-size: 1.4em !important;
+  transition: 0.4s;
+
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+.cookies {
+  top: 35%;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  button.navbar-toggler.collapsed {
+    margin-right: 20px;
+  }
+
+  button.navbar-toggler {
+    margin-right: 20px;
+  }
+
+  a.nav-link {
+    top: 10px;
+    text-align: center;
+  }
+
+  a.nav-link:before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.nav-link:hover:before {
+    visibility: hidden;
+    transform: scaleX(0) !important;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .mobile-none-link {
+    display: flow-root !important;
+  }
+
+  button.btn-don {
+    margin: 20px;
+    margin-left: 27%;
+  }
+}

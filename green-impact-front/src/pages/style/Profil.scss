@@ -1,0 +1,165 @@
+.cardProfil {
+  padding: 80px 0px 70px 0px;
+
+  .profil {
+    width: 1000px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 50px 65px;
+
+    .infos {
+      display: flex;
+    }
+
+    img {
+      margin-right: 30px;
+      margin-bottom: 40px;
+      width: 60px;
+    }
+
+    h3 {
+      font-size: 30px !important;
+      padding-top: 10px;
+      color: #000;
+    }
+  }
+}
+
+.profil *:not(i) {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.event-card {
+  font-family: none !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  padding: 2px 10px;
+  margin-left: 30px;
+  width: 90%;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #000;
+  }
+}
+
+.spacing-order {
+  margin-top: 2rem !important;
+}
+
+button.editHome {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #7db769;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button.editHome:hover {
+  background-color: #88c672;
+}
+
+button.backHome {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #807f7f;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button.backHome:hover {
+  background-color: #cecece;
+}
+
+.modal-user {
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+  }
+
+  .row:last-child input {
+    margin-bottom: 1rem;
+  }
+
+  button.editProfile {
+    width: 100%;
+    background-color: #7db769;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+  }
+
+  button.editProfile:hover {
+    background-color: #88c672;
+  }
+
+  button.backProfile {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #807f7f;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+  }
+
+  button.backProfile:hover {
+    background-color: #cecece;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardProfil .profil {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .event-card {
+    width: 90%;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,135 @@
+/* FEUILLE STYLE DE LA PAGE ÉVÈNEMENTS */
+
+.mise-en-page {
+  padding: 10px 40px 0px 40px;
+}
+
+.events {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid #f8f9fa;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .picture-card {
+    position: relative;
+    bottom: 12px;
+  }
+
+  .text-card {
+    position: relative;
+    top: 20px;
+  }
+
+  .event-picture {
+    border-radius: 5px;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 1em;
+  }
+}
+
+.ficheEvent {
+  .head {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    .infoEvent {
+      position: relative;
+      top: 15px;
+    }
+  }
+}
+
+.btn-join {
+  background-color: #7db769;
+  color: #fff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+}
+
+.btn-join:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+    animation: loader-spin infinite 2s linear;
+  }
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .events {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #f8f9fa;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .picture-card {
+      position: relative;
+      bottom: 12px;
+    }
+
+    .text-card {
+      position: relative;
+    }
+
+    .event-picture {
+      border-radius: 5px;
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .ficheEvent {
+    .head {
+      display: block;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+        max-height: 200px;
+      }
+
+      .infoEvent {
+        margin-left: 0em !important;
+        top: 5px;
+      }
+    }
+    button.cancel-button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
