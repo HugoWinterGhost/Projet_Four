@@ -1,0 +1,22 @@
+App\Entity\ECommerce\Category:
+    category_{1..10}:
+        name: 'category_<current()>'
+    
+App\Entity\ECommerce\Collection:
+    collection_{1..10}:
+        name: 'collection_<current()>'
+    
+#App\Entity\ECommerce\Order:
+    
+#App\Entity\ECommerce\ItemOrder:
+
+App\Entity\ECommerce\Item:
+    item_{1..200}:
+        name: 'item_<current()>'
+        description: <sentence()>
+        price: <numberBetween(0.0, 70.0)>
+        size: [S, M, L, XL]
+        collection: '@collection_*'
+        category: '@category_*'
+#        image: 
+    

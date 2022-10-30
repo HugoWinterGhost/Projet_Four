@@ -1,0 +1,9 @@
+App\Entity\FAQ\Answer:
+    answer_{1..100}:
+        name: 'answer_<current()>'
+        status: []
+        question: '@question_*'
+    
+App\Entity\FAQ\Question:
+    question_{1..10}:
+        name: 'question_<current()>'

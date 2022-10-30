@@ -1,0 +1,15 @@
+App\Entity\User:
+    admin:
+        firstName: <firstName()>
+        lastName: <lastName()>
+        email: test@example.com
+        password: \$2y\$13\$mr.PqTchwnaXAN8GvSV/VOiq9D/d3O3Fg8wTkG/p./QjX9qWcAfki
+        roles: [ROLE_ADMIN]
+    user_{1..100}:
+        firstName: <firstName()>
+        lastName: <lastName()>
+        password: \$2y\$13\$mr.PqTchwnaXAN8GvSV/VOiq9D/d3O3Fg8wTkG/p./QjX9qWcAfki
+        roles: [ROLE_ADMIN]
+        email: '<current()>_@example.com'
+        events: ['@event_*']
+        

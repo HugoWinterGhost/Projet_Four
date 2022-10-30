@@ -1,0 +1,29 @@
+
+App\Entity\Main\Event:
+    event_{1..20}:
+        title: 'event_<current()>'
+        description: <sentence()>
+        startAt: '<dateTimeBetween(-2days, +100days)>'
+        endAt: '<dateTimeBetween(-2days, +100days)>'
+        city: <city()>
+        addresses: [<sentence()>]
+        status: [1]
+        nbWorkshop: <numberBetween(1, 100)>
+        nbVolunteer: <numberBetween(1, 100)>
+        nbStand: <numberBetween(1, 100)>
+#        image: 
+        users: ['@user_*','@user_*','@user_*']
+
+App\Entity\Main\Impact:
+    impact_{1..100}:
+        title: 'impact_<current()>'
+        description: <sentence()>
+#        image:
+        recycling: <numberBetween(1, 100)>
+        waste: '@waste_*'
+
+App\Entity\Main\Waste:
+    waste_{1..10}:
+        name: 'waste_<current()>'
+    
+    
